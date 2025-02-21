@@ -16,10 +16,16 @@ html,body{
 }
 ul{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     padding: 15px;
     list-style: none;
     background-color: bisque;
+}
+@media (min-width : 768px) {
+    ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 .main-content{
     width: 100%;
